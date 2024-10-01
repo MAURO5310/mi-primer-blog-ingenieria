@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harvard - Mi Blog Personal</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <img src="images/eniac.jpg" alt="Imagen de Portada" class="portada" width="500" height="500">
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="hardware.html">hardware</a></li>
+                <li><a href="software.html">Software</a></li>
+                <li><a href="ia.html">IA</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>GIT</h1>
+        <h2>instalar GIT</h2>
+        <p>Para comenzar debemos  instalar en nuestro computador el sistema GIT Para esto debemos ingresar a nuestro buscador el siguiente link https://git-scm.com/ y descargar segun el sistema operativo de nuestro computador <p>
+        <img src="instalar git.jpg" alt="images" width="200" height="200"> <P>
+
+         <h2>Crear un nuevo directorio o carpeta</h2>
+         <p>Si quieres crear un nuevo proyecto, primero es ejecutar los comandos <p style="color: paleturquoise;">ls.</p> para ubicar donde crear nuestra nueva carpeta y después ejecutar comando <p style="color: paleturquoise;">cd.</p> para ingresar al lugar donde crearemos una carpeta y ejecutamos los comandos <p style="color: paleturquoise;"> mkdir nombre-del-proyecto.</p> (Creación Git) en nuestra terminal para crear la carpeta
+        <img src="ejemplo git 1.jpg" alt="images" width="200" height="200"> </p>
+        
+        <h2>Inicializar el repositorio</h2>
+        Ahora inicializa un repositorio Git en el directorio actual: <p style="color: paleturquoise;">git init:</p> Crea un nuevo repositorio vacío de Git. Esto crea un subdirectorio llamado <p style="color: paleturquoise;">git</p>, donde Git almacena toda la información de versión y metadatos.
+        <img src="ejemplo git 2.jpg" alt="images" width="200" height="200"> <img src="ejemplo git 3.jpg" alt="images" width="200" height="200">
+
+    
+        <h2>Agregar archivos</h2>
+
+        Crea algunos archivos en tu carpeta. Por ejemplo, puedes crear un archivo html:<p style="color: paleturquoise;">gcode index.html:</p>  Crea un archivo vacío llamado "index.html".
+        <img src="ejemplo git 4.jpg" alt="images" width="200" height="200"> <img src="ejemplo git 5.jpg" alt="images" width="200" height="200">
+
+        Ahora se puede trabajar en el documento de index.htm
+        Después ejecutamos comando <p style="color: paleturquoise;">git status</p> para mirar el status del repositorio que estamos trabajando
+        <img src="ejemplo git 6.jpg" alt="images" width="200" height="200">
+
+        aparece el archivo index.html en color rojo, lo que significa que ese archivo no ha sido rastreado por lo que no realizará ninguna copia del archivo (index.html) hasta que sea rastreado, para lo cual ejecutamos el comando <p style="color: paleturquoise;">git add</p> (index.html) y nuevamente <p style="color: paleturquoise;">git status</p> lo que arrojara que hay un nuevo archivo que se llama index.html
+        <img src="ejemplo git 7.jpg" alt="images" width="200" height="200">
+
+        <h2>CREACION DE BRANCHESA</h2>
+
+        <H3> Guardar cambios: git commit </H3>
+        Una vez que los archivos están en la staging, debes confirmarlos con <P style=" color: paleturquoise;" >git commit</P> Esto guarda una versión permanente de los cambios en el historial de Git. <P style=" color: paleturquoise;" >git commit m</P> "Mensaje que describe los cambios"
+        <img src="branchs 1jpg, branchs 2jpg" alt="images" width="200" height="200">
+
+        <h3>Branches (Ramas) y Cambiar entre ellas	</h3>
+        Git permite trabajar en diferentes ramas para mantener un desarrollo organizado, facilitando la creación de características nuevas o corrección de errores sin afectar el código principal.
+        <P style=" color: paleturquoise;" >git checkout -b Verificacion_Git</P>
+        <img src="branchs 3.jpg" alt="images" width="200" height="200">
+
+        Cuando terminas de trabajar en una rama, puedes fusionarla con otra (normalmente con la rama principal main o master). Por ejemplo, cambiamos a la rama main <P style=" color: paleturquoise;" >git checkout main</P>  y una vez allí podemos fusionar el contenido de alguna de las otras ramas: <P style=" color: paleturquoise;" >git merge nombre-de-la-rama</P>  Esto combinará los cambios de la nombre-de-la-rama en la rama actual. Recuerda que puedes usar <P style=" color: paleturquoise;" >git status</P> para ver el estado actual de tu repositorio, mostrándote qué archivos han sido modificados, cuáles están listos para ser confirmados (en el área de staging) y cuáles no se están rastreando aún.
+
+            <img src="brachs 4.jpg, branchs 5.jpg, branchs 6.jpg" alt="images"  width="200" height="200">
+
+
+            <h2> Agregar un repositorio remoto</h2>
+
+            Crea un repositorio remoto en una plataforma:
+Si aún no tienes un repositorio remoto, primero debes crearlo en una plataforma como GitHub, GitLab, o Bitbucket.
+Una vez que lo crees, obtendrás la URL del repositorio remoto, que puede ser algo como https://github.com/usuario/repositorio.git o git@github.com:usuario/repositorio.git.
+
+Configura el repositorio remoto en tu proyecto local: 
+Para agregar el repositorio remoto a tu proyecto local, usa el comando: <P style=" color: paleturquoise;" >git remote add origin</P>  <URL-del-repositorio-remoto>
+    <img src="agregar repositorio 7.jpg" alt="images"  width="200" height="200">
+
+    <h2>Verificar que se agregó el repositorio remoto</h2>
+
+    Puedes verificar si el repositorio remoto fue agregado correctamente con este comando: <P style=" color: paleturquoise;" >git remote -v</P>  
+    <img src="agregar repositorio 8.jpg" alt="images" width="200" height="200">
+
+
+
+
+
+</p>
+            
+    </main>
+</body> 
+</html>
